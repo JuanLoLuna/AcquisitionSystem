@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rmmod uio_pruss
+modprobe uio_pruss extram_pool_sz=0x30D40
+echo "The RAM pool size for the acquisition is:"
+cat /sys/class/uio/uio0/maps/map1/size

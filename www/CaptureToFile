@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Capturing the samples from the memory and dumping to .dat file"
+./mem2file 100000  > Prueba01.dat
+
