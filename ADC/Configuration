@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "Loading Device Tree Overlay"
+export SLOTS=/sys/devices/bone_capemgr.9/slots
+cd /
+cd lib/firmware/
+echo EBB-PRU-ADC > $SLOTS
+cat $SLOTS
+
+cd ~
+cd exploringBB/chp13/adc
+rmmod uio_pruss
+modprobe uio_pruss extram_pool_sz=0x30D40
+echo "The RAM pool size for the acquisition is:"
+cat /sys/class/uio/uio0/maps/map1/size
