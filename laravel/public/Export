@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /root/AcquisitionSystem/ADC/
+./plot
+mv Prueba01.dat /var/www/laravel/public

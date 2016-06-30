@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "Loading device tree overlay for PRU-ADC..."
+cd /lib/firmware
+echo EBB-PRU-ADC > /sys/devices/bone_capemgr.9/slots
+cat /sys/devices/bone_capemgr.9/slots
+echo "done"
