@@ -6,7 +6,7 @@ This is aquisition system with a developed laravel user interface
 ## Debian BB version
 The version used to develop the AS was Debian 8.4 2016-05-13 downloaded directly from BeagleBoard.org Latest Firmware Images page, here is the download link:
 
-[https://debian.beagleboard.org/images/bone-debian-8.4-lxqt-4gb-armhf-2016-05-13-4gb.img.xz](BeagleBoard.org Latest Firmware Images)
+[Debian 8.4 2016-05-13](https://debian.beagleboard.org/images/bone-debian-8.4-lxqt-4gb-armhf-2016-05-13-4gb.img.xz)
 
 The Linux image used was the 3.8.13-bone70, you can get it using the apt-get command as follows:
 
@@ -51,3 +51,15 @@ Install the newest version and the FastCGI Process Manager typing the following 
 The last code line install the pgsql extension to be used by PostgreSQL
 
 ## Laravel installation
+For laraver installation is necessary to first install [Composer](https://getcomposer.org/download/) (follow the directions from the link). Once comopser is downloaded move the file composer.phar to bin folder.
+
+	mv composer.phar /usr/local/bin/composer
+	
+The you can follow the instructions stated in the Digital Ocean blog. [How to Install Laravel with an Nginx Web Server on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-laravel-with-an-nginx-web-server-on-ubuntu-14-04), in order to install laravel.
+
+## Disable HDMI cape from BB
+Disable the HDMI cape adding the next lines to the uEnv.txt file located in the boot folder
+
+	cape_disable=/sys/device/bone_capemgr.9/slots
+	reboot
+	
