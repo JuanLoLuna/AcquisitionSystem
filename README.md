@@ -48,7 +48,7 @@ Install the newest version and the FastCGI Process Manager typing the following 
 	apt-get install php5 php5-fpm
 	apt-get install php5-pgsql
 	
-The last code line install the pgsql extension to be used by PostgreSQL
+The last code line install the pgsql extension to be used by PostgreSQL  
 
 ## Laravel installation
 For laraver installation is necessary to first install [Composer](https://getcomposer.org/download/) (follow the directions from the link). Once comopser is downloaded move the file composer.phar to bin folder.
@@ -63,3 +63,12 @@ Disable the HDMI cape adding the next lines to the uEnv.txt file located in the 
 	cape_disable=/sys/device/bone_capemgr.9/slots
 	reboot
 	
+## Using the Acquisition System as root
+Clone the Acquisition System folder into /root, then build the bash script "setup", this will build all the necessary files for the AS to work
+
+	chmod u+x setup
+	./setup
+	
+run the laravel server from the /var/www/laravel folder by
+
+	php artisan serve --host="your ip" --port=4563("Can be any port")
