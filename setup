@@ -19,3 +19,7 @@ cd /root/AcquisitionSystem/ADC
 
 ./build
 
+#Copying the laravel folder to var/www
+echo "Copying the laravel folder to /var/www"
+
+cp laravel /var/www
