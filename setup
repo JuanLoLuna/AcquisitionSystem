@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#Building the binaries for the Aaquisition System
+chmod u+x /root/AcquisitionSystem/ADC/build
+
+chmod u+x /root/AcquisitionSystem/ADC/plot
+
+#Building the binaries used in laravel to control the AS
+chmod u+x /root/AcquisitionSystem/laravel/public/ConfBB
+
+chmod u+x /root/AcquisitionSystem/laravel/public/ConfRAM
+
+chmod u+x /root/AcquisitionSystem/laravel/public/Run
+
+chmod u+x /root/AcquisitionSystem/laravel/public/Export
+
+#Running the build bsch script, which in turn builds the necessary items for the PRU to work
+cd /root/AcquisitionSystem/ADC
+
+./build
+
