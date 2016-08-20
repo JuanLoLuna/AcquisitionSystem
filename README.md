@@ -55,7 +55,7 @@ For laraver installation is necessary to first install [Composer](https://getcom
 
 	mv composer.phar /usr/local/bin/composer
 	
-The you can follow the instructions stated in the Digital Ocean blog. [How to Install Laravel with an Nginx Web Server on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-laravel-with-an-nginx-web-server-on-ubuntu-14-04), in order to install laravel.
+Follow the instructions stated in the Digital Ocean blog. [How to Install Laravel with an Nginx Web Server on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-laravel-with-an-nginx-web-server-on-ubuntu-14-04), in order to install laravel.
 
 ## Disable HDMI cape from BB
 Disable the HDMI cape adding the next lines to the uEnv.txt file located in the boot folder
